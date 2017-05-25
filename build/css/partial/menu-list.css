@@ -1,0 +1,19 @@
+/* ======= Humburger ======= */
+/* ======= map ======= */
+.main_navigation_list {
+  float: left;
+  height: 49px;
+  margin: 32px 0 31px 60px; }
+  .main_navigation_list .navigation_list_item {
+    float: left;
+    margin: 20px 22px 18px;
+    transition: all 0.2s ease-in-out; }
+    .main_navigation_list .navigation_list_item .main_navigation_list_item_text {
+      font: 700 15px/15px "Source Sans Pro", Arial, sans-serif;
+      color: #506a85; }
+      .main_navigation_list .navigation_list_item .main_navigation_list_item_text:hover {
+        cursor: pointer;
+        background: #f5f7fa;
+        color: #00bc9c; }
+    .main_navigation_list .navigation_list_item .left {
+      margin-left: 0; }
