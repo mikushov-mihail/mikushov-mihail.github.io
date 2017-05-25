@@ -1,0 +1,876 @@
+
+/* ============= Mixin ============= */
+@mixin fonts($font_size, $line_height, $font_family)
+{
+    font-size: $font_size;
+    line-height: $line_height;
+    font-family: $font_family;
+}
+
+@mixin border-radius($border_radius)
+{
+    -webkit-border-radius: $border_radius;
+    -moz-border-radius: $border_radius;
+    border-radius: $border_radius;
+}
+
+@mixin border($border_height, $border_style, $border_color, $border_radius)
+{
+    border: $border_height $border_style $border_color;
+@include border-radius($border_radius);
+}
+
+@mixin transform($transform_value)
+{
+    -webkit-transform: $transform_value;
+    -moz-transform: $transform_value;
+    -ms-transform: $transform_value;
+    -o-transform: $transform_value;
+    transform: $transform_value;
+}
+
+@mixin transition($transition-property, $transition-duration, $transition_timing_function, $transition-delay)
+{
+    -webkit-transition: $transition-property, $transition-duration, $transition_timing_function, $transition-delay;
+    -moz-transition: $transition-property, $transition-duration, $transition_timing_function, $transition-delay;
+    -o-transition: $transition-property, $transition-duration, $transition_timing_function, $transition-delay;
+    transition: $transition-property, $transition-duration, $transition_timing_function, $transition-delay;
+}
+
+@mixin border_bottom($border_height, $border_style, $border_color)
+{
+    border-bottom: $border_height $border_style $border_color;
+}
+
+@mixin content($max_width, $width, $height)
+{
+    max-width: $max_width;
+    width: $width;
+    height: $height;
+    margin: 0 auto;
+}
+
+@mixin header_social_account($image, $width, $height, $margin, $background_color_hover, $image_hover)
+{
+    @include transition(all, 0.2s, ease-in-out, 0.2s);
+    cursor: pointer;
+
+    a
+    {
+        content: url($image);
+        width: $width;
+        height: $height;
+        margin: $margin;
+    }
+
+&:hover
+ {
+     background: $background_color_hover;
+ }
+
+&:hover a
+ {
+     content: url($image_hover);
+ }
+}
+
+@mixin button($button_width, $button_height, $hover_text, $white, $box-shadow, $hover_button)
+{
+    div
+    {
+        background: $hover_text;
+        width: $button_width;
+        height: $button_height;
+        margin: 46px auto 0 auto;
+    @include border(0, solid, $white, 4px);
+
+    .get_in_touch_button
+    {
+        background: $hover_text;
+        height: 65px;
+        width: 295px;
+        display: block;
+        border: none;
+        color: $white;
+    @include fonts(18px, 65px, $white);
+    @include border-radius(2px);
+        box-shadow: 0 2px 0 0 $box-shadow;
+        text-transform: uppercase;
+
+&:hover
+ {
+     background: $hover_button;
+ @include transition(all, 0.2s, ease-in-out, 0s);
+ }
+}
+}
+}
+/* ============= /Mixin ============= */
+
+/* ============= Fonts ============== */
+$lato_bold: 'Lato Bold', Arial, sans-serif;
+$lato_black: 'Lato:900', Arial, sans-serif;
+$source_sans_pro_regular: 'Source Sans Pro Regular', Arial, sans-serif;
+$source_sans_pro_bold: 'Source Sans Pro Bold', Arial, sans-serif;
+/* ============= /Fonts ============== */
+
+
+
+/* ============= Color ============== */
+/* ---- border color ---- */
+$border_color: #e6e9ed;
+$box-shadow: #00a085;
+
+/* ---- header social account hover background ---- */
+$facebook_background: #4668b3;
+$google_plus_background: #de5745;
+$twitter_background: #2fbbed ;
+$pinterest_background: #d94348;
+$behance_background: #3079ff;
+$dribbble_background: #eb6397;
+
+/* ---- section background ----- */
+$header: #f5f7fa;
+$latest_work: #f2f5f7;
+$footer_top: #2f4052;
+$footer_bottom: #283645;
+
+/* ---- text ---- */
+$white: #ffffff;
+$main_title: #506a85;
+$hero_subtitle: #a3b1bf;
+$main_text: #73879c;
+
+/* ---- button background---- */
+$button_background: #00bc9c;
+
+/*_ button_hover _*/
+
+/*_ footer _*/
+$enter_email_address: #4e5c6c;
+
+/*_ footer_copyright _*/
+$footer_copyright: #707e8c;
+
+/* ============== Hover ============= */
+/* ---- hover text ---- */
+$header_hover: #10b09c;
+$hover_text: #00bc9c;
+
+
+/* ---- images ----- */
+$images_hover: #00bc9c;
+
+
+/* ---- button background ---- */
+$hover_button: #17a78b;
+$down_menu: #f5f7fa;
+
+/* ============= /Color ============== */
+
+
+
+/* ======================== Style ======================== */
+html,
+body,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+section
+{
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+@include fonts(15px, 15px, $lato_bold);
+}
+
+/* ================================ Header ================================*/
+
+header
+{
+    width: 100%;
+    height: 152px;
+    overflow: hidden;
+@include border_bottom(1px, solid, $border_color);
+    color: $main_title;
+
+.navigation_bar_header
+{
+    height: 40px;
+    background: $header;
+@include border_bottom(1px, solid, $border_color);
+
+.content
+{
+@include content(1170px, 100%, inherit);
+
+.contact
+{
+    max-width: 270px;
+    width: 100%;
+    height: inherit;
+    display: inline-block;
+
+a
+{
+    color: $main_title;
+    height: inherit;
+
+.contact_info,
+.contact_phone
+{
+    float: left;
+@include fonts(12px, 40px, $source_sans_pro_regular);
+
+&:hover
+ {
+     cursor: pointer;
+ }
+}
+
+.contact_info
+{
+&:hover
+ {
+     color: $header_hover;
+ @include transition(all, 0.2s, ease-in-out, 0s);
+&:before
+ {
+     content: url('images/icon/icon-mail-one-hover.png');
+     position: relative;
+     top: 1px;
+ }
+}
+
+&:before
+ {
+     content: url('images/icon/icon-mail-one.png');
+     margin-right: 8px;
+ }
+}
+
+.contact_phone
+{
+    margin-left: 28px;
+
+&:before
+ {
+     content: url('images/icon/icon-mobile.png');
+     margin-right: 10px;
+     position: relative;
+     top: 2px;
+ }
+}
+}
+}
+
+.social_list
+{
+    width: 180px;
+    height: 40px;
+    float: right;
+
+.list_item
+{
+    width: 30px;
+    height: 54px;
+    margin: -14px -2px;
+    display: inline-block;
+}
+
+.facebook
+{
+@include header_social_account('images/icon/icon-s-facebook.png', 9px, 11px, 27px 0 16px 12px, $facebook_background, 'images/icon/icon-s-facebook-hover.png')
+}
+
+.google_plus
+{
+@include header_social_account('images/icon/icon-s-gplus.png', 11px, 11px, 27px 0 16px 10px, $google_plus_background, 'images/icon/icon-s-gplus-hover.png')
+}
+
+.twitter
+{
+@include header_social_account('images/icon/icon-s-twitter.png', 11px, 9px, 29px 0 16px 10px, $twitter_background, 'images/icon/icon-s-twitter-hover.png')
+margin-top: -16px !important;
+}
+
+.pinterest
+{
+
+@include header_social_account('images/icon/icon-s-pinterest.png', 9px, 11px, 27px 0 16px 11px, $pinterest_background, 'images/icon/icon-s-pinterest-hover.png')
+}
+
+.behance
+{
+@include header_social_account('images/icon/icon-s-behance.png', 13px, 8px, 30px 0 16px 9px, $behance_background, 'images/icon/icon-s-behance-hover.png')
+}
+
+.dribbble
+{
+@include header_social_account('images/icon/icon-s-dribbble.png', 12px, 11px, 27px 0 16px 9px, $dribbble_background, 'images/icon/icon-s-dribbble-hover.png')
+}
+}
+}
+}
+
+.navigation_bar
+{
+@include border_bottom(1px, solid, $border_color);
+
+.content
+{
+@include content(1170px, 100%, 111px);
+
+.logo
+{
+    margin: 36px 0 0 0;
+    float: left;
+    width: 170px;
+    display: inline-block;
+}
+
+.main_navigation_list
+{
+    float: left;
+    margin: 32px 0 31px 60px;
+    height: 49px;
+
+.navigation_list_item
+{
+    display: inline-block;
+    margin: 0 22px 0 22px;
+    padding: 20px 0 18px 0;
+
+
+.main_navigation_list_item_text
+{
+    text-transform: uppercase;
+@include fonts(15px, 15px, $lato_bold);
+    width: 81px;
+    height: 49px;
+
+&:hover
+ {
+     cursor: pointer;
+     background: $header;
+     color: $hover_text;
+ @include transition(all, 0.2s, ease-in-out, 0.2s);
+ }
+}
+
+.left
+{
+    margin-left: 0;
+}
+}
+}
+
+.search
+{
+    float: right;
+
+img
+{
+    margin: 51px 23px 0 0;
+}
+}
+
+}
+
+}
+}
+/* ================================ /Header ================================*/
+
+
+
+/* ================================ Main ================================*/
+
+/* ---------------------- Section Hero ---------------------- */
+.hero
+{
+    width: 100%;
+    height: 880px;
+    background: url('images/carousel/carousel-item-first.jpg');
+
+.hero_title
+{
+    color: $white;
+@include fonts(78px, 78px, $lato_black);
+    margin: 0 0 40px 0;
+    padding: 301px 0 0 0;
+    text-align: center;
+}
+
+.hero_subtitle
+{
+    color: $hero_subtitle;
+@include fonts(15px, 15px, $source_sans_pro_regular);
+
+p
+{
+    margin-bottom: 22px;
+    text-align: center;
+}
+}
+
+div
+{
+    background: $hover_text;
+    width: 295px;
+    margin: 46px auto 0 auto;
+    height: 65px;
+@include border(0, solid, $white, 4px);
+
+
+.get_started
+{
+    background: $hover_text;
+    height: 65px;
+    width: 295px;
+    display: block;
+    border: none;
+    color: $white;
+@include fonts(18px, 65px, $white);
+@include border-radius(2px);
+    box-shadow: 0 2px 0 0 $box-shadow;
+    text-transform: uppercase;
+
+&:hover
+ {
+     cursor: pointer;
+     background: $hover_button;
+ @include transition(all, 0.2s, ease-in-out, 0s);
+ }
+}
+}
+
+
+
+}
+/* ---------------------- /Section Hero ---------------------- */
+
+/* ---------------------- Section Who We Are ---------------------- */
+.who_we_are_title,
+.who_we_are_subtitle,
+.latest_works_title,
+.latest_works_subtitle,
+.get_in_touch_title,
+.get_in_touch_subtitle
+{
+    text-align: center;
+}
+
+.who_we_are_title,
+.latest_works_title,
+.get_in_touch_title
+{
+@include fonts(44px, 33px, $lato_bold);
+    color: $main_title;
+}
+
+.who_we_are_subtitle,
+.latest_works_subtitle,
+.get_in_touch_subtitle
+{
+    width: 100%;
+    margin: 0 auto;
+    color: $main_text;
+}
+
+.who_we_are
+{
+    height: 672px;
+    width: 100%;
+
+.content
+{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+
+.who_we_are_title
+{
+    margin: 140px 0 46px 0;
+}
+
+.who_we_are_subtitle
+{
+    max-width: 773px;
+@include fonts(22px, 32px, $source_sans_pro_regular);
+}
+
+.who_we_are_description
+{
+    margin-top: 80px;
+
+.who_we_are_description_third
+{
+    width: 385px;
+    height: 170px;
+    display: inline-block;
+
+.description_third_icon
+{
+    max-width: 70px;
+    width: 100%;
+    height: inherit;
+    float: left;
+    display: inline-block;
+
+img
+{
+    display: block;
+    float: right;
+}
+}
+
+.description_third
+{
+    float: left;
+    width: 285px;
+    margin-left: 30px;
+
+.description_third_label
+{
+    margin: 0 0 35px 0;
+    color: $main_title;
+@include fonts(26px, 26px, $lato_bold);
+    text-transform: capitalize;
+}
+
+.description_third_message
+{
+@include fonts(16px, 22px, $source_sans_pro_regular);
+    color: $main_text;
+    margin: 0;
+}
+}
+
+}
+
+.margin_left
+{
+    margin-left: 7px;
+}
+}
+}
+}
+/* ---------------------- /Section Who We Are ---------------------- */
+
+/* ---------------------- Section Latest Works ---------------------- */
+.latest_works
+{
+    width: 100%;
+    height: 1270px;
+    background: $latest_work;
+
+.content
+{
+@include content(1170px, 100%, 1270px);
+.latest_works_title
+{
+    padding: 140px 0 46px 0;
+}
+
+.latest_works_subtitle
+{
+@include fonts(22px, 16px, $source_sans_pro_regular);
+    padding-bottom: 83px;
+}
+
+.latest_works_two_figures
+{
+    height: 500px;
+
+.figure
+{
+    display: inline-block;
+    float: left;
+    max-width: 570px;
+    width: 100%;
+    height: 500px;
+    background: $white;
+@include border(2px, solid, $latest_work, 2px);
+
+.figure_title,
+.figure_label
+{
+    text-align: center;
+}
+
+.figure_title
+{
+@include fonts(20px, 17px, $lato_bold);
+    color: $main_title;
+    margin: 37px 0 17px 0;
+}
+
+.figure_label
+{
+@include fonts(14px, 14px, $source_sans_pro_regular);
+    color: $main_text;
+    text-align: center;
+}
+
+
+}
+
+.two
+{
+    margin-left: 22px;
+}
+}
+
+.latest_works_carousel
+{
+    height: 245px;
+    margin-top: 79px;
+
+.latest_works_carousel_item
+{
+    max-width: 270px;
+    width: 100%;
+    margin: 0 -3px;
+    display: inline-block;
+}
+
+.carousel_margin_right
+{
+    margin-right: 30px;
+}
+}
+
+.paginton
+{
+    margin: 0 auto;
+    width: 75px;
+
+.paginton_item
+{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: $main_title;
+@include border-radius(50%);
+}
+
+.active
+{
+    background: $hover_text;
+    margin: 45px 9px 0 9px;
+}
+}
+}
+}
+/* ---------------------- /Section Latest Works ---------------------- */
+
+/* ---------------------- Section Get In Touch ---------------------- */
+.get_in_touch
+{
+    width: 100%;
+    height: 480px;
+
+.get_in_touch_title
+{
+    margin: 140px 0 48px 0;
+}
+
+.get_in_touch_subtitle
+{
+    max-width: 700px;
+    width: 100%;
+    line-height: 25px;
+}
+
+div
+{
+    background: $hover_text;
+    width: 150px;
+    margin: 46px auto 0 auto;
+    height: 49px;
+@include border(0, solid, $white, 4px);
+
+
+.get_in_touch_button
+{
+    background: $hover_text;
+    height: 49px;
+    width: 150px;
+    display: block;
+    border: none;
+    color: $white;
+@include fonts(15px, 49px, $source_sans_pro_regular);
+@include border-radius(6px);
+    box-shadow: 0 2px 0 0 $box-shadow;
+    text-transform: uppercase;
+
+&:hover
+ {
+     cursor: pointer;
+     background: $hover_button;
+ @include transition(all, 0.2s, ease-in-out, 0s);
+ }
+}
+}
+
+}
+/* ---------------------- /Section Get In Touch ---------------------- */
+
+/* ---------------------- Footer ---------------------- */
+footer
+{
+    height: 447px;
+    width: 100%;
+
+.footer_top
+{
+    height: 364px;
+    background: $footer_top;
+
+.content
+{
+@include content(1200px, 100%, inherit);
+
+.footer_top_list_item
+{
+    float: left;
+    display: inline-block;
+    max-width: 270px;
+    width: 100%;
+    margin: 75px 15px 0 15px;
+
+.footer_latest_content
+{
+.footer_grand_motel:hover
+{
+    background: rgba(16, 176, 156, 0.8);
+}
+}
+
+&_title
+ {
+     margin: 0 0 27px 0;
+ @include fonts(16px, 16px, $lato_bold);
+     color: $white;
+     text-transform: uppercase;
+ }
+
+.footer_who_we_are_description
+{
+    margin: 25px 0 25px 0;
+}
+
+.footer_more
+{
+@include fonts(15px, 15px, $source_sans_pro_bold);
+    color: $hero_subtitle;
+
+&:after
+ {
+     margin-top: 1px;
+     margin-left: 8px;
+     content: url('images/icon/icon-right.png');
+ }
+
+&:hover,
+&:hover:after,
+ .footer_mail:hover,
+ .footer_mail:hover:before
+ {
+ @include transition(all, 0.2s, ease-in-out, 0s)
+ }
+
+&:hover
+ {
+     color: $hover_text;
+ }
+
+&:hover:after
+ {
+     content: url('images/icon/icon-right-hover.png');
+ }
+
+}
+
+.footer_contact
+{
+    color: $hero_subtitle;
+@include fonts(14px, 14px, $source_sans_pro_regular)
+}
+
+a
+{
+    color: $hero_subtitle;
+}
+
+.footer_address:before,
+.footer_phone:before
+{
+    margin-right: 11px;
+    margin-left: 2px;
+}
+
+.footer_address:before
+{
+    content: url('images/icon/icon-location.png');
+}
+
+.footer_phone:before
+{
+    content: url('images/icon/icon-mobile-footer.png');
+}
+
+.footer_mail:before
+{
+    content: url('images/icon/icon-mail-footer.png');
+    margin-right: 9px;
+}
+
+.footer_mail:hover
+{
+    color: $hover_text;
+}
+
+.footer_mail:hover:before
+{
+    content: url('images/icon/icon-mail-one-hover.png');
+}
+
+}
+}
+}
+}
+
+.footer_who_we_are_description,
+.footer_get_in_touch_subtitle,
+.footer_free_updates_description
+{
+@include fonts(14px, 20px, $source_sans_pro_regular);
+    color: $hero_subtitle;
+}
+
+.footer_latest_content
+{
+a
+{
+.footer_grand_motel
+{
+    background: rgba(16, 176, 156, 0.8);
+}
+}
+}
+/* ---------------------- /Footer ---------------------- */
+

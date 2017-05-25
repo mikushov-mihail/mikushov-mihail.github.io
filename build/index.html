@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=320, initial-scale=1.0">
+    <title>Reen</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../build/css/normalize.css">
+    <link rel="stylesheet" href="css/assets/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="my_modal" class="modal ">
+      <div id="modal_dialog_action" class="modal_dialog">
+        <div id="modal_contents" class="modal_content">
+          <div id="close" class="close_button"></div>
+          <div class="modal_main">
+            <h2 class="title title_modal">Leave a message</h2>
+            <form action="#" class="modal_form">
+              <input id="name" class="input username" type="text" placeholder="Name (Required)" autofocus required>
+              <input id="email" class="input email" type="email" placeholder="Email (Required)" required>
+              <div class="div_textarea">
+                <textarea name="text" id="text" class="textarea" placeholder="Enter your message..."></textarea>
+              </div>
+            </form>
+            <input type="submit" class="button_one form_button" value="Subscribe">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header id="#top" class="header clearfix">
+      <div class="navigation_bar_header">
+        <div class="row">
+          <div class="large-4 columns contact clearfix">
+            <a href="mailto:info@reen.com">
+              <span class="contact_info">info@reen.com</span>
+            </a>
+            <a href="tel:001234567890">
+              <span class="contact_phone">+00 (123) 456 78 90</span>
+            </a>
+          </div>
+          <div class="large-offset-5 large-3 end columns social_account">
+            <div class="row">
+              <div class="large-offset-3 icon icon_facebook">
+                <div class="disguise">
+                  <div class="visible">
+                    <div class="visible_image"></div>
+                  </div>
+                  <a href="#" target="_blank">
+                    <div class="invisible_background"></div>
+                    <div class="invisible_image"></div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="icon icon_google">
+                <div class="disguise">
+                  <div class="visible">
+                    <div class="visible_image"></div>
+                  </div>
+                  <a href="#" target="_blank">
+                    <div class="invisible_background"></div>
+                    <div class="invisible_image"></div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="icon icon_twitter">
+                <div class="disguise">
+                  <div class="visible">
+                    <div class="visible_image"></div>
+                  </div>
+                  <a href="#" target="_blank">
+                    <div class="invisible_background"></div>
+                    <div class="invisible_image"></div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="icon icon_pinterest">
+                <div class="disguise">
+                  <div class="visible">
+                    <div class="visible_image"></div>
+                  </div>
+                  <a href="#" target="_blank">
+                    <div class="invisible_background"></div>
+                    <div class="invisible_image"></div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="icon icon_behance">
+                <div class="disguise">
+                  <div class="visible">
+                    <div class="visible_image"></div>
+                  </div>
+                  <a href="#" target="_blank">
+                    <div class="invisible_background"></div>
+                    <div class="invisible_image"></div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="icon icon_dribbble">
+                <div class="disguise">
+                  <div class="visible">
+                    <div class="visible_image"></div>
+                  </div>
+                  <a href="#" target="_blank">
+                    <div class="invisible_background"></div>
+                    <div class="invisible_image"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navigation_bar">
+        <div class="row">
+          <ul class="">
+            <li class="large-2 columns visible_hamburger clearfix">
+              <a href="index.html">
+                <img class="logo header_logo" src="../build/css/images/logo.svg" alt="logo">
+              </a>
+              <button class="hamburger cmn-toggle-switch cmn-toggle-switch__htx">
+                <span>toggle menu</span>
+              </button>
+            </li>
+
+            <li class="large-10 columns main_navigation">
+              <div class="drop_down_menu">
+                <nav class="main_navigation_list">
+                  <div class="navigation_list_item">
+                    <a class="smooth_scroll" href="#about_us">
+                      <span class="main_navigation_list_item_text">About Us</span>
+                    </a>
+                  </div>
+
+                  <div class="navigation_list_item">
+                    <a class="smooth_scroll" href="#latest">
+                      <span class="main_navigation_list_item_text">Latest Works</span>
+                    </a>
+                  </div>
+
+                  <div class="navigation_list_item">
+                    <a class="smooth_scroll" href="#get_touch">
+                      <span class="main_navigation_list_item_text">Get In Touch</span>
+                    </a>
+                  </div>
+
+                  <div id="contact_us" class="navigation_list_item">
+                    <span class="main_navigation_list_item_text">Contact Us</span>
+                  </div>
+                </nav>
+
+                <div id="searchs" class="search">
+                  <img src="../build/css/images/icon/icon_search.png" alt="search">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section id="#hero" class="hero">
+        <div class="slider">
+          <ul class="slides">
+            <li class="slide first selected">
+              <div class="container clearfix">
+                <h1 class="hero_title">Made for Designers</h1>
+                <h3 class="hero_subtitle">Create your online portfolio in minutes with the professionally and lovingly
+                  designed REEN website template. Customize your site with versatile and easy to use features.
+                </h3>
+                <div id="get" class="button hero_button">
+                  <button class="button_one get_start">
+                    <span class="button_one_now">get started now</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="slide second">
+              <div class="container clearfix">
+                <h1 class="hero_title">Fresh and <br>beautiful design</h1>
+                <h3 class="hero_subtitle">REEN is designed to showcase your talent and put your work in the forefront.
+                  Professionally use of typography and layout that fits your content.
+                </h3>
+                <div class="button">
+                  <button class="button_one">
+                    <span class="button_one_now">get started now</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="slide third">
+              <div class="container clearfix">
+                <h1 class="hero_title">
+                  <span class="hero_title_top">Clean and</span>
+                  <span class="hero_title_bottom">reusable code</span>
+                </h1>
+                <h3 class="hero_subtitle">The clean code allows you to easily copy code blocks from content modules and
+                  past them in different places or layouts.
+                </h3>
+                <div class="button">
+                  <button class="button_one">
+                    <span class="button_one_now">get started now</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="slide fourth">
+              <div class="container clearfix">
+                <h1 class="hero_title">
+                  <span class="hero_title_top">Just focus on</span>
+                  <span class="hero_title_bottom">your creativity</span>
+                </h1>
+                <h3 class="hero_subtitle">Take a break from messing around with heavy coding and spend your <br> time
+                  brainstorming ideas for your next project.
+                </h3>
+                <div class="button">
+                  <button class="button_one">
+                    <span class="button_one_now">get started now</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="slide fifth">
+              <div class="container clearfix">
+                <h1 class="hero_title">Showcase <br> your content</h1>
+                <h3 class="hero_subtitle">With REEN you have the possibility to create websites for various contents
+                  quickly and easily. Now it's up to you!
+                </h3>
+                <div class="button">
+                  <button class="button_one">
+                    <span class="button_one_now">get started now</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <button id="next" class="slide_button next_slide slide_stop"></button>
+          <button id="previous" class="slide_button previous_slide slide_stop"></button>
+
+          <ul class="pagination slide_stop">
+            <li class="pagination_item active"></li>
+            <li class="pagination_item"></li>
+            <li class="pagination_item"></li>
+            <li class="pagination_item"></li>
+            <li class="pagination_item"></li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section id="about_us" class="who_we_are">
+        <h2 class="title">Beautiful. Clean. Responsive.</h2>
+        <p class="subtitle">
+          REEN is a high-quality solution for those who want a beautiful website in no time. It's fully responsive and
+          will adapt itself to any mobile device. iPad, iPhone, Android, it doesn't matter. Your content will always
+          looks its absolute best.
+        </p>
+        <div class="row row_top clearfix">
+          <div class="small-offset-1 small-10 columns">
+            <div class="row">
+              <div class="small-4 small-offset-4 columns who_description_icon heart">
+                <img src="../build/css/images/icon_heart_empty.png" alt="passion">
+              </div>
+              <div class="small-8  columns description_third">
+                <h4 class="description_third_label">passion</h4>
+                <p class="description_third_message">
+                  Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae
+                  sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="small-offset-1 small-10 columns">
+            <div class="row">
+              <div class=" columns who_description_icon lamp">
+                <img src="../build/css/images/icon_lamp.png" alt="creativity">
+              </div>
+              <div class=" columns description_third">
+                <h4 class="description_third_label">creativity</h4>
+                <p class="description_third_message">
+                  Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae
+                  sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="row">
+              <div class=" columns who_description_icon star">
+                <img src="../build/css/images/icon_star_empty.png" alt="quality">
+              </div>
+              <div class=" columns description_third">
+                <h4 class="description_third_label">quality</h4>
+                <p class="description_third_message">
+                  Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae
+                  sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="show_more" class="row row_show clearfix">
+          <div class=" columns">
+            <div class="row">
+              <div class="columns who_description_icon technology">
+                <img src="../build/css/images/icon_brackets.png" alt="passion">
+              </div>
+              <div class=" columns description_third">
+                <h4 class="description_third_label">technology
+                </h4>
+                <p class="description_third_message">
+                  Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae
+                  sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" columns">
+            <div class="row">
+              <div class="columns who_description_icon social">
+                <img src="../build/css/images/icon_social.png" alt="creativity">
+              </div>
+              <div class=" columns description_third">
+                <h4 class="description_third_label">social</h4>
+                <p class="description_third_message">
+                  Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae
+                  sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" columns">
+            <div class="row">
+              <div class=" columns who_description_icon marketing">
+                <img src="../build/css/images/icon_marketing.png" alt="quality">
+              </div>
+              <div class=" columns description_third">
+                <h4 class="description_third_label">marketing</h4>
+                <p class="description_third_message">
+                  Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae
+                  sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div id="show" class="show_more_button">
+            <button class="button_one">
+              <span class="button_one_now">show more</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="latest" class="latest_works">
+        <h2 class="title">Check out our latest works</h2>
+        <h4 class="subtitle">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</h4>
+        <div class="row latest_list">
+          <div class="latest_list_item columns">
+            <div class="card six">
+              <figure class="figure">
+                <div class="cross"></div>
+                <a href="#">
+                  <img class="image" src="../build/css/images/latest-works/grand_motel.jpg" alt="Grand Motel">
+                </a>
+              </figure>
+              <h4 class="description_title">Grand Motel gets an identity brushup</h4>
+              <p class="description_label">Identity</p>
+            </div>
+          </div>
+          <div class="latest_list_item columns">
+            <div class="card six">
+              <figure class="figure">
+                <div class="cross"></div>
+                <a href="#">
+                  <img class="image" src="../build/css/images/latest-works/brand.jpg" alt="Brand">
+                </a>
+              </figure>
+              <h4 class="description_title">Grand Motel gets an identity brushup</h4>
+              <p class="description_label">Identity</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row carousel">
+          <div class="large-3 columns third">
+            <figure class="carousel_figure">
+              <div class="cross"></div>
+              <img class="image" src="../build/css/images/latest-works/simpli_nota.jpg" alt="simpli nota">
+              <span class="carousel_title simpli_nota">Simpli Nota</span>
+              <span class="carousel_subtitle">Identity</span>
+            </figure>
+          </div>
+
+          <div class="large-3 columns ">
+            <figure class="carousel_figure">
+              <div class="cross"></div>
+              <img class="image none_display" src="../build/css/images/latest-works/record.jpg" alt="record">
+              <span class="carousel_title record">Record Psd Mokup</span>
+              <span class="carousel_subtitle">Identity</span>
+            </figure>
+            <figure class="carousel_figure">
+            </figure>
+          </div>
+
+          <div class="large-3 columns ">
+            <figure class="carousel_figure">
+              <div class="cross"></div>
+              <img class="image display_none" src="../build/css/images/latest-works/yancy.jpg" alt="yancy">
+              <span class="carousel_title astor_yancy">Astor & Yancy</span>
+              <span class="carousel_subtitle">Identity</span>
+            </figure>
+          </div>
+
+          <div class="large-3 columns  display_none_first">
+            <figure class="carousel_figure">
+              <div class="cross"></div>
+              <img class="image" src="../build/css/images/latest-works/signwall.jpg" alt="signwall">
+              <span class="carousel_title signwall">Signwall</span>
+              <span class="carousel_subtitle">Identity</span>
+            </figure>
+          </div>
+          <div class="large-2 large-centered columns">
+            <div class="pagination">
+              <div class="pagination_item"></div>
+              <div class="pagination_item active"></div>
+              <div class="pagination_item"></div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="get_touch" class="get_in_touch">
+        <h2 class="title">Want to work with us?</h2>
+        <h4 class="subtitle">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae
+          sitiorem rest non restibusaes maio es dem tumquam.
+        </h4>
+        <div class="button_one">
+          <button class="get_in_touch_button">get in touch</button>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer_top clearfix">
+        <div class="row">
+          <div class="large-3 columns">
+            <h3 class="footer_item_title">who we are</h3>
+            <a href="index.html" class="">
+              <img class="logo footer_logo" src="../build/css/images/logo_white.svg" alt="logo">
+            </a>
+            <p class="footer_who_we_are_description">Magnis modipsae voloratati andigen daepeditem quiate re porem que
+              aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam
+            </p>
+
+            <a href="#" class="text_button">
+              <span class="footer_more">More about us</span>
+            </a>
+          </div>
+
+          <div class="large-3 columns">
+            <h3 class="footer_item_title">latest works</h3>
+            <div class="footer_latest_list">
+
+              <div class="footer_latest_list_item">
+                <div class="cross"></div>
+                <a href="#">
+                  <img class="footer_grand_motel" src="../build/css/images/footer/grand_motel_small.jpg"
+                       alt="grand motel">
+                </a>
+              </div>
+
+              <div class="footer_latest_list_item">
+                <div class="cross"></div>
+                <a href="#">
+                  <img src="../build/css/images/footer/monitor.jpg" alt="monitor">
+                </a>
+              </div>
+
+              <div class="footer_latest_list_item">
+                <div class="cross"></div>
+                <a href="#">
+                  <img src="../build/css/images/footer/record_small.jpg" alt="record">
+                </a>
+              </div>
+
+              <div class="footer_latest_list_item">
+                <div class="cross"></div>
+                <a href="#">
+                  <img src="../build/css/images/footer/phone.jpg" alt="phone">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="large-3 columns">
+            <h3 class="footer_item_title">get in touch</h3>
+            <span class="footer_get_in_touch_subtitle">Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</span>
+            <div class="footer_contact">
+              <address class="address">84 Street, City, State 24813</address>
+              <a href="tel:001234567890">
+                <span class="footer_phone">+00 (123) 456 78 90</span>
+              </a>
+              <a href="mailto:info@reen.com">
+                <span class="footer_mail">info@reen.com</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="large-3 columns">
+            <h3 class="footer_item_title">free updates</h3>
+            <div class="footer_free_updates_description">
+              <span>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</span>
+            </div>
+            <form action="#" class="form">
+              <input id="subscribe" class="input" type="email" placeholder="Enter your email address">
+              <button type="submit" class="form_button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div class="row">
+          <div class="large-3 columns">
+            <span class="copyright">© 2014 REEN. All rights reserved.</span>
+          </div>
+          <ul class="large-offset-5 large-4 columns footer_navigation">
+            <li class="footer_navigation_item">
+              <a href="index.html">home</a>
+            </li>
+            <li class="footer_navigation_item bullet">
+              <a href="#">portfolio</a>
+            </li>
+            <li class="footer_navigation_item bullet">
+              <a href="#">blog</a>
+            </li>
+            <li class="footer_navigation_item bullet">
+              <a href="#">about</a>
+            </li>
+            <li class="footer_navigation_item bullet">
+              <a href="#">services</a>
+            </li>
+            <li class="footer_navigation_item bullet">
+              <a href="#">
+                <span>contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div id="roll_up" class="go_up"></div>
+
+    <script src="../node_modules/foundation-sites/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+
+<!--
+
+1. Сделать функцию smooth_scroll униерсальной (привязываться не к ID, а к классам)
+2. Не использовать # в id-шниках, поменять id
+4. Модальное окно - должно плавно пропадать - использовать visibility.
+
+-->
