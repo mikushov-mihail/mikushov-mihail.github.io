@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9396c204-b9e8-4f71-85ce-8751aeddf312" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reen/sprite.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/logo_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/logo_hover.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reen/css/style.css" afterPath="$PROJECT_DIR$/reen/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reen/index.html" afterPath="$PROJECT_DIR$/reen/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -55,10 +49,16 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/reen/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="514" column="58" lean-forward="false" selection-start-line="514" selection-start-column="35" selection-end-line="514" selection-end-column="58" />
+                <state relative-caret-position="459">
+                  <caret line="557" column="0" lean-forward="false" selection-start-line="557" selection-start-column="0" selection-end-line="558" selection-end-column="0" />
                   <folding>
-                    <element signature="e#5967#5974#1" expanded="true" />
+                    <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="e#5793#5800#1" expanded="true" />
+                    <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -107,8 +107,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/reen/sprite.html" />
-        <option value="$PROJECT_DIR$/reen/index.html" />
         <option value="$PROJECT_DIR$/reen/css/style.css" />
+        <option value="$PROJECT_DIR$/reen/index.html" />
       </list>
     </option>
   </component>
@@ -301,12 +301,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496245340949</updated>
-      <workItem from="1496245342238" duration="5140000" />
+      <workItem from="1496245342238" duration="5469000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5140000" />
+    <option name="totallyTimeSpent" value="5469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1604" height="867" extended-state="0" />
@@ -365,16 +365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reen/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="514" column="58" lean-forward="false" selection-start-line="514" selection-start-column="35" selection-end-line="514" selection-end-column="58" />
-          <folding>
-            <element signature="e#5967#5974#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reen/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -382,6 +372,22 @@
           <folding>
             <element signature="e#38626#38840#2" expanded="true" />
             <element signature="e#39729#40068#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reen/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="557" column="0" lean-forward="false" selection-start-line="557" selection-start-column="0" selection-end-line="558" selection-end-column="0" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#5793#5800#1" expanded="true" />
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
