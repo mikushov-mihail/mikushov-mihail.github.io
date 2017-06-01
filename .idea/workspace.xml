@@ -2,7 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4b5a45a-b806-4b33-9c34-0eb9b5c692dd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reen/css/style.css" afterPath="$PROJECT_DIR$/reen/css/style.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/.idea/git.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/carousel/carousel_item_fifth.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/carousel/carousel_item_first.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/carousel/carousel_item_fourth.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/carousel/carousel_item_second.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/carousel/carousel_item_third.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/footer/footer_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/footer/grand_motel_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/footer/monitor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/footer/phone.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/footer/record_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/icon/icon_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/icon/icon_right_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/icon/icon_up_open_mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/icon/icon_up_open_mini.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/latest-works/brand.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/latest-works/grand_motel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/latest-works/record.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/latest-works/signwall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/latest-works/simpli_nota.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/latest-works/yancy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/logo_white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/images/spritesheet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/index.1.0.1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/js/jquery-3.2.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reen/js/main.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,33 +51,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.1.0.1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reen/index.1.0.1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="19200" lean-forward="false" selection-start-line="0" selection-start-column="19200" selection-end-line="0" selection-end-column="19200" />
-              <folding>
-                <element signature="e#3696#3703#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/reen/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="84850" lean-forward="false" selection-start-line="0" selection-start-column="84850" selection-end-line="0" selection-end-column="84850" />
-              <folding>
-                <element signature="e#29835#30049#2" expanded="true" />
-                <element signature="e#30831#31170#2" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -59,8 +68,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/reen/index.1.0.1.html" />
         <option value="$PROJECT_DIR$/reen/css/style.css" />
+        <option value="$PROJECT_DIR$/reen/index.1.0.1.html" />
       </list>
     </option>
   </component>
@@ -90,7 +99,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -102,38 +110,17 @@
               <option name="myItemId" value="mikushov-mihail.github.io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mikushov-mihail.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mikushov-mihail.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reen" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RunDashboard">
@@ -160,18 +147,20 @@
       <updated>1496235204984</updated>
       <workItem from="1496235206737" duration="294000" />
       <workItem from="1496240339211" duration="73000" />
-      <workItem from="1496252860816" duration="3265000" />
+      <workItem from="1496252860816" duration="3665000" />
+      <workItem from="1496268892998" duration="629000" />
+      <workItem from="1496299636520" duration="608000" />
+      <workItem from="1496306408203" duration="922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3632000" />
+    <option name="totallyTimeSpent" value="6191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1604" height="867" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -200,17 +189,27 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/reen/index.1.0.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reen/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="84832" lean-forward="false" selection-start-line="0" selection-start-column="84832" selection-end-line="0" selection-end-column="84832" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/reen/index.1.0.1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="19200" lean-forward="false" selection-start-line="0" selection-start-column="19200" selection-end-line="0" selection-end-column="19200" />
-          <folding>
-            <element signature="e#3696#3703#1" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -218,10 +217,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="84850" lean-forward="false" selection-start-line="0" selection-start-column="84850" selection-end-line="0" selection-end-column="84850" />
-          <folding>
-            <element signature="e#29835#30049#2" expanded="true" />
-            <element signature="e#30831#31170#2" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reen/index.1.0.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19200" lean-forward="false" selection-start-line="0" selection-start-column="19200" selection-end-line="0" selection-end-column="19200" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reen/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="84850" lean-forward="false" selection-start-line="0" selection-start-column="84850" selection-end-line="0" selection-end-column="84850" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/reen/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="84832" lean-forward="false" selection-start-line="0" selection-start-column="84832" selection-end-line="0" selection-end-column="84832" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reen/index.1.0.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="0" column="2745" lean-forward="false" selection-start-line="0" selection-start-column="2745" selection-end-line="0" selection-end-column="2745" />
+          <folding />
         </state>
       </provider>
     </entry>
