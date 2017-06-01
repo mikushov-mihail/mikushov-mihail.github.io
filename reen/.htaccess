@@ -1,57 +1,89 @@
-DirectoryIndex index index.html
-DirectorySlash off
-Options -Indexes -MultiViews
-# Rules
-# site.com/
-# site.com/index -> site.com
-# site.com	-> site.com/
-# site.com/file/ -> site.com/file.html
-# site.com/file  -> site.com/file.html
-# site.com/dir/file ->site.com/dir/file.html
-# site.com/dir/file/ -> site.com/dir/file.html
-# no ending slashes
+# ----------------------------------------------------------------------
+# | Expires headers |
+# ----------------------------------------------------------------------
 
-RewriteEngine On
-RewriteBase /
-
-RewriteCond %{REQUEST_URI} \.(css|jpg|gif|png|zip|rar|doc|xls|js|tif|tiff|docx|xlsx|ico)$|test\.php$
-	RewriteRule ^(.*)$ $1 [L,QSA]
-
-# nothing to do there in subrequests
-RewriteCond %{ENV:NS}	!=1
-RewriteCond %{IS_SUBREQ} =true
-	RewriteRule (.*) $1 [L,QSA]
-#do NS=0?
-
-
-RewriteCond %{REQUEST_URI} ^/index$ [OR]
-RewriteCond %{REQUEST_URI} ^/index[.]+(\w+)$
-	RewriteRule . / [R=301,L]
-
-# remove trailing slashes
-# if want external redirect use correct external redir [R=301,L] or [R=301] for correct internal or simple redir [L]
-RewriteCond %{REQUEST_URI} !^/$
-RewriteCond %{REQUEST_URI} (.*)/$
-	RewriteRule . %1.html [R=301,L,E=NS:1,QSA]
-
-# if whants .html endings
-RewriteCond %{REQUEST_URI} !^(.+)\.(html|php)$
-	RewriteRule . %{REQUEST_URI}.html [R=301,L]
-
-# fix multidots in endings (missed language) index..html instead of index.en.html
-RewriteCond %{REQUEST_URI} ^(.+)\.\.+(\w+)$
-	RewriteRule . %1.%2 [R=301,L]
-# otherways
-#RewriteCond %{REQUEST_URI} (.+)\.(html|php)$
-#	RewriteRule . %1 [R=301,L]
-
-# any php filename in root dir
-# this makes secure loses
-RewriteCond %{REQUEST_URI} ^[\w\-.]+$
-RewriteCond %{REQUEST_FILENAME} (.*)\.(html|php)$
-RewriteCond %1.php -s [OR]
-RewriteCond %1.html -s
-	RewriteRule . %1.%2 [L,QSA]
-
-RewriteRule (.*) entry.php?URI=$1 [L,QSA]
+# Serve resources with far-future expires headers.
 #
+# (!) If you don't control versioning with filename-based
+# cache busting, you should consider lowering the cache times
+# to something like one week.
+#
+# https://httpd.apache.org/docs/current/mod/mod_expi...
+
+ExpiresActive on
+ExpiresDefault "access plus 1 month"
+
+# CSS
+
+ExpiresByType text/css "access plus 1 year"
+
+# Data interchange
+
+ExpiresByType application/atom+xml "access plus 1 hour"
+ExpiresByType application/rdf+xml "access plus 1 hour"
+ExpiresByType application/rss+xml "access plus 1 hour"
+
+ExpiresByType application/json "access plus 0 seconds"
+ExpiresByType application/ld+json "access plus 0 seconds"
+ExpiresByType application/schema+json "access plus 0 seconds"
+ExpiresByType application/vnd.geo+json "access plus 0 seconds"
+ExpiresByType application/xml "access plus 0 seconds"
+ExpiresByType text/xml "access plus 0 seconds"
+
+# Favicon (cannot be renamed!) and cursor images
+
+ExpiresByType image/vnd.microsoft.icon "access plus 1 week"
+ExpiresByType image/x-icon "access plus 1 week"
+
+# HTML
+
+ExpiresByType text/html "access plus 0 seconds"
+
+# JavaScript
+
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType application/x-javascript "access plus 1 year"
+ExpiresByType text/javascript "access plus 1 year"
+
+# Manifest files
+
+ExpiresByType application/manifest+json "access plus 1 week"
+ExpiresByType application/x-web-app-manifest+json "access plus 0 seconds"
+ExpiresByType text/cache-manifest "access plus 0 seconds"
+
+# Media files
+
+ExpiresByType audio/ogg "access plus 1 month"
+ExpiresByType image/bmp "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType image/webp "access plus 1 month"
+ExpiresByType video/mp4 "access plus 1 month"
+ExpiresByType video/ogg "access plus 1 month"
+ExpiresByType video/webm "access plus 1 month"
+
+# Web fonts
+
+# Embedded OpenType (EOT)
+ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+ExpiresByType font/eot "access plus 1 month"
+
+# OpenType
+ExpiresByType font/opentype "access plus 1 month"
+
+# TrueType
+ExpiresByType application/x-font-ttf "access plus 1 month"
+
+# Web Open Font Format (WOFF) 1.0
+ExpiresByType application/font-woff "access plus 1 month"
+ExpiresByType application/x-font-woff "access plus 1 month"
+ExpiresByType font/woff "access plus 1 month"
+
+# Web Open Font Format (WOFF) 2.0
+ExpiresByType application/font-woff2 "access plus 1 month"
+
+# Other
+
+ExpiresByType text/x-cross-domain-policy "access plus 1 week"
