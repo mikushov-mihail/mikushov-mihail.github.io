@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cd7efd2-5ecc-41bb-a8c6-9f03d1ba0523" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index-min.html" afterPath="$PROJECT_DIR$/build/index-min.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,31 +18,38 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="791" column="37" lean-forward="true" selection-start-line="791" selection-start-column="37" selection-end-line="791" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index-min.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build/index-min.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="30933" lean-forward="false" selection-start-line="0" selection-start-column="30933" selection-end-line="0" selection-end-column="30933" />
+            <state relative-caret-position="17">
+              <caret line="1" column="24728" lean-forward="true" selection-start-line="1" selection-start-column="24728" selection-end-line="1" selection-end-column="24728" />
               <folding>
-                <element signature="e#892#899#0" expanded="true" />
+                <element signature="e#893#900#0" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#30703#30710#0" expanded="true" />
+                <element signature="e#30714#30721#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index-min.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/index-min.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="794" column="54" lean-forward="false" selection-start-line="794" selection-start-column="54" selection-end-line="794" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>class</find>
+      <find>15006</find>
+      <find>iclass</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,8 +58,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build/index.min.html" />
-        <option value="$PROJECT_DIR$/build/index.html" />
         <option value="$PROJECT_DIR$/build/index-min.html" />
+        <option value="$PROJECT_DIR$/build/index.html" />
       </list>
     </option>
   </component>
@@ -185,12 +192,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1498452647102</updated>
-      <workItem from="1498452649184" duration="1106000" />
+      <workItem from="1498452649184" duration="2258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1106000" />
+    <option name="totallyTimeSpent" value="2258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
@@ -226,22 +233,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/index.html">
+    <entry file="file://$PROJECT_DIR$/build/index-min.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="791" column="37" lean-forward="true" selection-start-line="791" selection-start-column="37" selection-end-line="791" selection-end-column="37" />
+        <state relative-caret-position="202">
+          <caret line="794" column="54" lean-forward="false" selection-start-line="794" selection-start-column="54" selection-end-line="794" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/index-min.html">
+    <entry file="file://$PROJECT_DIR$/build/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30933" lean-forward="false" selection-start-line="0" selection-start-column="30933" selection-end-line="0" selection-end-column="30933" />
+        <state relative-caret-position="17">
+          <caret line="1" column="24728" lean-forward="true" selection-start-line="1" selection-start-column="24728" selection-end-line="1" selection-end-column="24728" />
           <folding>
-            <element signature="e#892#899#0" expanded="true" />
+            <element signature="e#893#900#0" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#30703#30710#0" expanded="true" />
+            <element signature="e#30714#30721#0" expanded="true" />
           </folding>
         </state>
       </provider>
