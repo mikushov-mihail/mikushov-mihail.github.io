@@ -13,6 +13,7 @@ ExpiresDefault "access plus 1 days"
 # Включаем кэширование изображений и флэш на месяц
 ExpiresByType image/x-icon "access plus 1 month"
 ExpiresByType image/jpeg "access plus 4 weeks"
+ExpiresByType image/blog/jpeg "access plus 4 weeks"
 ExpiresByType image/png "access plus 30 days"
 ExpiresByType image/gif "access plus 43829 minutes"
 ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
