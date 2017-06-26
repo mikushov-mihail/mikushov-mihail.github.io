@@ -1,0 +1,69 @@
+// include
+//--------
+@import '../../utils/utils',
+        '../../settings/settings';
+
+
+.scroll-to-top
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    opacity: 0;
+    z-index: 20;
+
+    transform: translateY(100%) scale(0.5);
+    transition: $transition-slowly;
+
+
+    &__sign
+    {
+        display: block;
+        width: 50px;
+        height: 50px;
+
+        border-radius: 50%;
+
+        color: $warning;
+        border: 1px solid $warning;
+        box-shadow: 0 0 2px 0 rgba($black, 0.11), 3px 4px 5px 0 rgba($black, 0.11);
+
+        box-sizing: border-box;
+        transition: $transition-slowly;
+
+
+        &:before
+        {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            font-size: rem-calc(28px);
+            line-height: rem-calc(40px);
+            text-align: center;
+        }
+    }
+
+
+    &:hover
+    {
+        .scroll-to-top__sign
+        {
+            border: 25px solid $alert;
+            color: $white;
+            box-shadow: 0 0 10px 4px rgba($alert, 0.21), 3px 4px 11px 1px rgba($alert, 0.31);
+            opacity: 1;
+        }
+    }
+
+
+}
+
+.js-scroll-to-top_visible
+{
+    opacity: 0.8;
+    transform: translateY(0) scale(1);
+}

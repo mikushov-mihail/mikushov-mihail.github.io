@@ -1,0 +1,39 @@
+// include
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.header
+{
+    border-bottom: 1px solid $gray;
+
+    &__logo
+    {
+        float: right;
+    }
+
+    &__service-menu
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.footer__header
+{
+    font-size: rem-calc(17px);
+    line-height: 22px;
+    text-transform: uppercase;
+
+
+    &:after
+    {
+        content: '';
+        display: block;
+        position: relative;
+        top: 5px;
+        width: 40px;
+        height: 2px;
+        margin-bottom: rem-calc(15px);
+        background-color: $decorative;
+    }
+}

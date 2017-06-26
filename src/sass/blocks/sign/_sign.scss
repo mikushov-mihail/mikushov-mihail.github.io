@@ -1,0 +1,48 @@
+// include
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.sign
+{
+    &__row
+    {
+        padding: 40px 0 20px;
+    }
+
+    &__item
+    {
+
+        border-radius: 4px;
+        border: 1px solid $gray;
+    }
+
+    &__title
+    {
+        @include font($regular, 22px, 23px, $font-secondary);
+        color: $light_gray;
+
+        &_align-right
+        {
+            float: right;
+            text-align: left;
+        }
+    }
+
+    &__description
+    {
+        @include font($regular, 15px, 17px, $font-secondary);
+        color: $gray;
+
+        &_align-right
+        {
+            float: right;
+            text-align: left;
+        }
+    }
+
+    &__image,
+    &__text
+    {
+        float: left;
+    }
+}

@@ -1,0 +1,27 @@
+// include
+//--------
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.burg
+{
+    cursor: pointer;
+    transition: $transition;
+
+    &-wrapper
+    {
+        &:hover
+        {
+            .burg
+            {
+                background: $decorative;
+            }
+        }
+
+        &_align_right
+        {
+            float: right;
+        }
+    }
+
+}

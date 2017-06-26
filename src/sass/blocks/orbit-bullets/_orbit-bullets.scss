@@ -1,0 +1,9 @@
+@import
+        '../../settings/settings',
+        '../../utils/utils';
+
+
+.orbit-bullets__button
+{
+    transition: $orbit-bullet_transition;
+}

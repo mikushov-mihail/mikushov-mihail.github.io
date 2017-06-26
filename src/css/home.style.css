@@ -1,0 +1,22 @@
+/*============ Fonts ============*/
+/*============ Color ============*/
+@media only screen and (max-width: 639px) {
+  .service-menu__contact,
+  .shopping-cart {
+    float: none;
+    margin: 0 auto; }
+  .service-menu__item {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+  .today-menu__full {
+    background: none; }
+    .today-menu__full__button {
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      transform: translate(0, 0); }
+    .today-menu__full-border {
+      border: 0; } }

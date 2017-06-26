@@ -1,0 +1,109 @@
+// include
+//--------
+@import '../../utils/utils',
+        '../../settings/settings';
+
+@media (min-width: 639px)
+{
+    .thumbnail
+    {
+        &__caption
+        {
+            visibility: hidden;
+            transform: translateX(-50%);
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-top: 50px;
+            padding-left: 40px;
+        }
+
+
+        &:hover
+        {
+            .thumbnail__photo
+            {
+                opacity: 0;
+                transform: translateX(50%);
+            }
+        }
+    }
+
+}
+
+.thumbnail
+{
+    position: relative;
+    margin: 0 auto 20px;
+    padding: 20px;
+    overflow: hidden;
+    bottom: 0;
+
+    &__caption
+    {
+        transition: $orbit-bullet_transition;
+        width: 100%;
+        height: 100%;
+        background-color: inherit;
+    }
+
+    &__photo
+    {
+        transition: $orbit-bullet_transition;
+    }
+
+    &:hover
+    {
+        .thumbnail__caption
+        {
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.caption
+{
+    &__description,
+    &__header
+    {
+        color: $white;
+        font-weight: $bold;
+    }
+    
+    &__header
+    {
+        &:hover
+        {
+            color: $alert;
+        }
+    }
+}
+
+.row__teem
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.bg-success
+{
+    background: $success;
+}
+
+.bg-alert
+{
+    background: $alert;
+}
+
+.bg-warning
+{
+    background: $warning;
+}
+
+.bg-decorative
+{
+    background: $decorative;
+}
+

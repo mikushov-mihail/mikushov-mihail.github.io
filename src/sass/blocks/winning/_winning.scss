@@ -1,0 +1,38 @@
+// include
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.winning
+{
+    background: url('../images/chef.jpg') fixed top;
+    background-size: cover;
+
+    &-wrapper
+    {
+        background: $light_black;
+    }
+
+    &__row
+    {
+        padding-top: 120px;
+        padding-bottom: 90px;
+    }
+
+    &__header
+    {
+        @include font($bold, 47px, 50px, $font_secondary);
+        text-transform: uppercase;
+        letter-spacing: rem-calc(1px);
+        text-align: center;
+        color: $white;
+    }
+
+    &__description
+    {
+        @include font($regular, 17px, 22px, $font_secondary);
+        text-align: center;
+        color: $white;
+    }
+
+}
+

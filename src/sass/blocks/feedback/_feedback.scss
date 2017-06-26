@@ -1,0 +1,24 @@
+// include
+//--------
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.row__client-feedback
+{
+    margin-top: 60px;
+}
+
+.feedback__photo-client-center
+{
+    margin: 0 auto;
+}
+
+.client-feedback
+{
+    &__orbit-bullets-wrapper
+    {
+        width: $orbit-bullet-wrapper-width;
+        height: 5px;
+        margin: auto;
+    }
+}

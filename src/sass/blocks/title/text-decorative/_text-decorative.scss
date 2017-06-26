@@ -1,0 +1,10 @@
+// include
+@import '../../../utils/utils',
+        '../../../settings/settings';
+
+.text-decorative
+{
+    @include font($regular, 60px, 60px, $font_decorative);
+    text-transform: lowercase;
+    color: $decorative;
+}
