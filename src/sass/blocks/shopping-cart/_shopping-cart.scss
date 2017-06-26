@@ -1,0 +1,51 @@
+// include
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.shopping-cart
+{
+    float: right;
+    width: 170px;
+
+
+    &__header
+    {
+        &_alignment-right
+        {
+            float: left;
+        }
+    }
+
+    &__text
+    {
+        letter-spacing: rem-calc(0.2px);
+
+        &_top,
+        &_bottom
+        {
+            display: block;
+        }
+
+        &_top
+        {
+            @include font($bold, 14px, 22px, $font_main);
+            color: $gray;
+            text-transform: uppercase;
+        }
+
+        &_bottom
+        {
+            @include font($bold, 15px, 22px, $font_main);
+            color: $light_gray;
+        }
+    }
+
+    &__icon
+    {
+        float: left;
+        margin-right: 10px;
+        font-size: rem-calc(30px);
+        color: $decorative;
+        transition: $transition;
+    }
+}

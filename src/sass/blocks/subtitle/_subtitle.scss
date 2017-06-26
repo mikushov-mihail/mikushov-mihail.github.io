@@ -1,0 +1,43 @@
+// include
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.subtitle
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 30px;
+    @include font($bold, 17px, 40px, $font_main);
+    text-transform: capitalize;
+    color: $primary;
+
+    &:before
+    {
+        left: -10px;
+    }
+
+    &:after
+    {
+        right: -10px;
+    }
+
+    &:before,
+    &:after
+    {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 30px;
+        height: 2px;
+        margin-top: 0;
+        background: $gray;
+    }
+
+    &_align-center
+    {
+        text-align: center;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}

@@ -1,0 +1,45 @@
+// include
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.orbit-slide
+{
+    height: 100%;
+    text-align: center;
+    color: $white;
+
+    &__title
+    {
+        position: relative;
+        padding-top: 180px;
+        @include font($regular, 75px, 75px, $font_secondary);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__description
+    {
+        text-align: center;
+        @include font($regular, 21px, 21px, $font_secondary);
+    }
+
+    &__first
+    {
+        background: url($orbit-slide__background + 'first.jpg') no-repeat fixed center center;
+    }
+
+    &__second
+    {
+        background: url($orbit-slide__background + 'second.jpg') no-repeat fixed center center;
+    }
+
+    &__third
+    {
+        background: url($orbit-slide__background + 'third.jpg') no-repeat fixed center center;
+    }
+}
+
+.sldie-first__title
+{
+
+}

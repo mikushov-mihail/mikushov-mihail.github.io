@@ -1,0 +1,55 @@
+// include
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.menu-bar
+{
+    &_padding_left
+    {
+        padding: 45px 30px;
+    }
+
+    &__item
+    {
+        float: left;
+
+        &:hover
+        {
+            .menu-bar__image
+            {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+        }
+
+
+        &_size_full
+        {
+            width: 100%;
+            padding: 8px 0;
+        }
+    }
+
+    &__link
+    {
+        //margin: 0 5px;
+        margin-left: 10px;
+        @include font($bold, 18px, 24px, $font_main);
+        text-align: center;
+        color: $medium_gray;
+    }
+
+    &__image
+    {
+        float: left;
+        opacity: 0.8;
+        transition: $transition;
+
+
+        &_circle
+        {
+            border-radius: 50%;
+            box-shadow: 0 2px 6px 0 $gray;
+        }
+    }
+}

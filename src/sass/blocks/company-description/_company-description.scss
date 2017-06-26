@@ -1,0 +1,15 @@
+// include
+//--------
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.company-description
+{
+    margin-top: 0;
+    margin-bottom: rem-calc(16px);
+    
+    &_align_left
+    {
+        float: left;
+    }
+}

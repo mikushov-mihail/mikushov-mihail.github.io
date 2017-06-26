@@ -1,0 +1,69 @@
+@import 'utils/utils',
+        'settings/settings';
+
+
+
+@media only screen and (max-width: 1169px)
+{
+    .page
+    {
+        font-size: $font_size_tablet;
+    }
+
+    .orbit-slide__title
+    {
+        font-size: rem-calc(35px);
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 1023px)
+{
+    .today-menu
+    {
+        &__button
+        {
+            transform: translate(-50%, 50%);
+        }
+
+        &__full
+        {
+            background: none;
+
+
+            &-border
+            {
+                border: 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 639px)
+{
+    .service-menu__contact,
+    .shopping-cart
+    {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .service-menu__item
+    {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .link_align_left
+    {
+        margin: initial;
+        text-align: left;
+    }
+
+
+    .footer__header
+    {
+        margin-top: 20px;
+    }
+}

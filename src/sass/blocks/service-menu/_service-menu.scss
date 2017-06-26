@@ -1,0 +1,44 @@
+// include
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.service-menu
+{
+    padding: 10px;
+
+    &__contact
+    {
+        float: left;
+        width: 400px;
+        padding: 8px 0;
+    }
+
+    &__item
+    {
+       margin-right: rem-calc(10px);
+    }
+
+    &__item,
+    &__telephone,
+    &__email
+    {
+        @include font($regular, 15px, 30px, $font_secondary);
+        color: $primary;
+    }
+
+    &__fa
+    {
+        color: $decorative;
+    }
+    
+    &__logo
+    {
+        float: left;
+    }
+
+    &__menu-bar
+    {
+        float: right;
+        margin: 1rem 0;
+    }
+}

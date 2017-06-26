@@ -1,0 +1,32 @@
+// include
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.row__welcome
+{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.welcome
+{
+    &__blockquote
+    {
+        @include font($regular, 15px, 17px, $font_main);
+
+        &_align-center
+        {
+            text-align: center;
+        }
+    }
+
+    &__image
+    {
+        font-size: 23px;
+
+        &_border_circle
+        {
+            border-radius: 50%;
+        }
+    }
+}

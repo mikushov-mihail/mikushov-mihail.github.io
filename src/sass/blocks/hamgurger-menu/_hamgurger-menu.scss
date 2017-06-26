@@ -1,0 +1,54 @@
+// include
+//--------
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.burg {
+    display: block;
+    position: relative;
+
+    height: $slice_height;
+    width: $burg_size;
+
+    background: $black;
+    transition: $transition;
+
+
+    &-wrapper
+    {
+        padding: 20px 0;
+        display: block;
+    }
+
+
+    &:before,
+    &:after
+    {
+        @extend .burg;
+
+        content: '';
+        position: absolute;
+    }
+
+    &:before
+    {
+        top: -10px;
+    }
+
+    &:after {
+        top: 10px;
+    }
+}
+
+
+.active-burg
+{
+    background: transparent;
+
+    &:before,
+    &:after
+    {
+        top: 0;
+        transform: rotate(45deg);
+    }
+}

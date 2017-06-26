@@ -1,0 +1,57 @@
+// include
+//--------
+@import '../../utils/utils',
+        '../../settings/settings';
+
+
+.list
+{
+    &__item
+    {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin: 0 5px;
+        font-size: rem-calc(18px);
+        color: $gray;
+        opacity: .8;
+        transition: $transition;
+        
+        &:hover
+        {
+            opacity: 1;
+            color: #000;
+        }
+    }
+
+    &__link
+    {
+        height: 42px;
+        width: 42px;
+        display: block;
+        border-radius: 50%;
+        border: 1px solid #dadada;
+        color: #3f3f3f;
+        background: #fff;
+        text-align: center;
+        transition: 0.4s;
+        box-sizing: border-box;
+
+        //&:before
+        //{
+        //    position: absolute;
+        //    font-size: 15px;
+        //    line-height: 42px;
+        //    top: 0;
+        //    bottom: 0;
+        //    left: 0;
+        //    right: 0;
+        //    content: '\f099';
+        //}
+
+        &:hover {
+            color: #fff;
+            border: 21px solid #1d1d1d;
+        }
+    }
+}

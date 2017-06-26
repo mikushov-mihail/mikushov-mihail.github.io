@@ -1,0 +1,15 @@
+@import 'text-decorative/text-decorative',
+        '../../utils/utils',
+        '../../settings/settings';
+
+.title
+{
+    @include font($bold, 43px, 43px, $font_main);
+    text-transform: capitalize;
+    color: $dark_gray;
+
+    &_align-center
+    {
+        text-align: center;
+    }
+}

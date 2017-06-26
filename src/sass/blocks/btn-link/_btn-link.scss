@@ -1,0 +1,68 @@
+// include
+//--------
+@import '../../utils/utils',
+        '../../settings/settings';
+
+
+.btn-link
+{
+    display: inline-block;
+    color: $decorative;
+    //font-weight: 600;
+    border-radius: 0;
+    //font-size: 14px;
+    //text-transform: uppercase;
+    position: relative;
+    padding-right: 24px;
+
+    //&:before
+    //{
+    //    position: absolute;
+    //    content: '\f178';
+    //    font-family: 'FontAwesome';
+    //    font-size: 18px;
+    //    right: 0px;
+    //    font-weight: 400;
+    //    top: -3px;
+    //    transition: 0.1s;
+    //    transition-delay: 0s;
+    //}
+
+    &:after
+    {
+        content: attr(data-title);
+        width: 0;
+    }
+
+    &:hover
+    {
+        color: $decorative;
+        text-decoration: none;
+        background-color: transparent;
+
+        //&:before
+        //{
+        //    color: $alert;
+        //    transition: 0.4s;
+        //    transition-delay: 0.3s;
+        //}
+    }
+
+    &:hover > span
+    {
+        width: 100%;
+        color: $alert;
+    }
+}
+
+.btn-link > span
+{
+    position: absolute;
+    padding-right: 24px;
+    width: 0;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    white-space: nowrap;
+}

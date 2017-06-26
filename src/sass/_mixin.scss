@@ -1,0 +1,126 @@
+// Settings and utils
+@import 'settings/settings',
+        'utils/utils';
+
+// Animate hover social icon
+@mixin header_social_account(
+        $timing,
+        $image,
+        $width,
+        $height,
+        $padding,
+        $background_color_hover,
+        $image_hover
+    )
+{
+
+
+    .disguise
+    {
+        position: relative;
+        width: 30px;
+        height: 80px;
+        transform: translateY(0);
+        transition: all $timing ease-in-out;
+
+        .visible,
+        .invisible_background
+        {
+            width: 30px;
+            height: 40px;
+        }
+
+        .visible_image,
+        .invisible_image
+        {
+            width: $width;
+            height: $height;
+            padding: $padding;
+        }
+
+        .visible
+        {
+            .visible_image
+            {
+                background: url($images_icon + $image) no-repeat center center;
+            }
+        }
+
+        .invisible_background
+        {
+            background: $background_color_hover;
+        }
+
+        .invisible_image
+        {
+            background: url($images_icon + $image_hover) no-repeat center center;
+        }
+
+        .invisible_image
+        {
+            opacity: 0;
+            transform: translateY(-100px);
+            transition: all $timing ease-in-out;
+        }
+
+        &:hover
+        {
+            transform: translateY(-40px);
+
+            .invisible_image
+            {
+                opacity: 1;
+                transform: translateY(-40px);
+            }
+        }
+    }
+}
+
+
+// Hover image
+@mixin hover_image(
+    $hover_background,
+    $top: 44%,
+    $left: 50%
+    )
+{
+    .cross
+    {
+        position: absolute;
+        width: calc(100% - 5px);
+        height: 100%;
+        background: $hover_background;
+        opacity: 0;
+        transform: scale(.5);
+        transition: all .2s ease-in-out;
+
+        &:before
+        {
+            display: block;
+            position: relative;
+            top: $top;
+            left: $left;
+            width: 19px;
+            content: url($images_icon + 'more.png');
+            opacity: 0;
+            transform: translateY(-86px);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+    &:hover
+    {
+        .cross
+        {
+            cursor: pointer;
+            opacity: 1;
+            transform: scale(1);
+
+            &:before
+            {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}

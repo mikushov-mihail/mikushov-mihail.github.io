@@ -1,0 +1,29 @@
+// include
+@import '../../utils/utils',
+        '../../settings/settings';
+
+.blog
+{
+    &__header
+    {
+        padding: 5px 0;
+
+        @include font($bold, 24px, 28px, $font_secondary);
+        text-transform: capitalize;
+        text-align: left;
+        letter-spacing: rem-calc(1px);
+
+        &:hover
+        {
+            color: $warning;
+        }
+    }
+
+    &__description
+    {
+        border: 0;
+        @include font($regular, 14px, 18px, $font_secondary);
+        color: $gray;
+        letter-spacing: rem-calc(1px);
+    }
+}
